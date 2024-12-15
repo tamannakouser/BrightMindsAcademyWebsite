@@ -1,0 +1,311 @@
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/blogo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>brightmindsacademy</title>
+	
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar logo and name  -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/blogo.png" alt="loading"></div>
+			<h2>Bright <span class="danger">Minds</span>
+				<br> Academy</h2>
+			<ul>
+				<li><a class="active" href="">Home</a></li>	
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text here" class="search" placeholder="Search here..."><img src="images/icon/sear.png" alt="search" onclick=slide()></div>
+		    
+			<ul>
+
+			    <li><a class ="sign" href="login.html"> Sign in</a></li>
+			</ul>
+			<a href="dashboard/index.html" class="get-started" >Get Started</a>
+			<img src="images/icon/intro.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		
+		</nav>
+		
+		<div class="head-container">
+		<center><div class="quote">
+			<h2>Bright Minds Academy </h2>
+		<p><h6><span class="dquote">Learn to code your future</span></h6></p>
+				
+			<div class="play">
+					<img src="images/icon/playy.jpg" alt="play"><span><a href="3D-Slider/index.html" target="_blank">OUR INSTITUTE</a></span>
+				</div>
+			</div></center>
+			<div class="svg-image">
+				<!-- Full-Screen Video -->
+				<video autoplay muted loop style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+					<source src="images/creator/introv.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/intro.svg" alt=""></div>
+			<div class="user">
+				<img src="images/creator/blogo.png" alt="Username">
+				<p>Bright Minds Academy</p>
+			</div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+<br> </br>
+<br> </br>
+
+<br> </br>
+
+<!-- Some Popular Subjects -->
+	<div class="title">
+	<br> </br>	<span>COURSES WE OFFER</span>
+	</div>
+	<br> </br>
+	<div class="type">
+		<center><h2> Learn to<h2/><h1> <span class="auto-type"></span></h1></center>
+	</div>
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script>
+			var typed = new Typed(".auto-type",{
+				strings: ["Build logics","Implement Ideas","Innovate Yourself From Scratch"],
+				typeSpeed: 80,
+				backSpeed:20,
+				loop:true
+			})
+		</script>
+
+	<br><br>
+	<div class="courses">
+		<center><div class="cbox">
+		<div class="det"><a href="cloud.html">Cloud Computing</a></div>
+		<div class="det"><a href="data.html">Data Science </a></div>
+		<div class="det"><a href="ai.html">Artificial intelligence</a></div>
+		<div class="det"><a href="ml.html">Machine Learning</a></div>
+		</div></center>
+		<div class="cbox">
+		<div class="det"><a href="c.html">basic to advance computer courses</a></div>
+		<div class="det"><a href="dsa.html">Data Structures and Algorithm </a></div>
+		<div class="det"><a href="python.html"> beginner to Advance Python</a></div>
+		<div class="det"><a href="java.html">Java Programming from scratch</a></div>
+		</div>
+	</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+			
+				<div class="side-image">
+					<img class="sideImage" src="images/icon/side.png" width="500" height="390">
+				</div>
+				<div class="side-text">
+					<h2>About our Institute : </h2>
+					<p>With a focus on quality education and hands-on learning, we empower our students to excel in their careers by delivering training that is relevant, impactful, and aligned with industry standards. Our team of expert instructors, combined with cutting-edge resources, ensures that every student receives personalized guidance and support on their journey to success.
+
+						At Bright Minds Academy, we are committed to fostering innovation, leadership, and a passion for technology, preparing our graduates to lead in the corporate world and beyond.</p>
+				</div>
+		</div>
+	</div>
+
+
+
+<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Founders</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/aadvik.jpg"></center>
+				<center><div class="card-title">Aadvik N </div>
+				
+				<div id="detail">
+					<p>“A destinguished Team leader at HCL with a decade of proffessional experience.major instructor at bright minds academy “</p>
+					<div class="duty"></div>
+					
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/aadvik.jpg"></center>
+				<center><div class="card-title">Zakir Usmani</div>
+				<div id="detail">
+					<p>“ Founder of Usmaniya International.also the marketting executive at Bright minds academy “</p>
+					<div class="duty"></div>
+									</div>
+				</center>
+			</div>
+			
+			<div class="card">
+				<center><img src="images/creator/aadvik.jpg"></center>
+				<center><div class="card-title">Amulya.S</div>
+				<div id="detail">
+					<p>“  An Esteemed engineering graduate. 
+						now the Co-founder and instructor at BRight Minds Academy.  “</p>
+					<div class="duty"></div>
+									</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #1d1c1c;">Services We Offer At Bright Minds Academy</p></center>
+		</div>
+		<a href=""><div class="s-card"><img src="images/icon/both.png"><p>Both OnlineAnd Offline Computer Courses</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/skilled.png"><p>Building Skilled Technical Concepts On Live</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/online.png"><p>Online Video Lectures</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/inter.png"><p>Interview Prep And Communicational Practices</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/per.png"><p>Performance and Ranking Reports</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/disc.png"><p>Discussion with Our Tutors & Mentors</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/test.png"><p>Monthly Once Brain Teasing Questions to Improve IQ</p></div></a>
+		<a href=""><div class="s-card"><img src="images/icon/onl.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/arr.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Bright Minds Learners Review</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/siri.jpg"><p>Tamanna Kouser</p>
+				<h6>Cloud Cmputing</h6>
+				<div class="rating"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					 the whole lot of content was really good. Some problems were challenging yet interesting Was explained very well where ever I stuck...
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/tam.jpg"><p>Asfiya</p>
+				<h6>Cloud Computing</h6>
+				<div class="rating"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					"I did cloud computing course at Bright Minds Academy and it was a great experience for me."
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/fatt.jpg"><p>Fathima</p>
+				<h6>Python Programming</h6>
+				<div class="rating"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Bright Minds Academy was an amazing experience for me. I'm Doing BCA and had a little experience in coding but I think it has helped me think things through in a much more analytical manner. Coding is important no matter which branch you are in. It gives you a better understanding about how to approach a problem...
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/rosh.jpg"><p>Roshan Ara</p>
+				<h6>Cloud Computing</h6>
+				<div class="rating"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"><img src="images/icon/starr.jpg"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					 the instructors  have good knowledge about the field and were very helpful in making us understand the concepts. I would certainly recommend this to anyone...
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:sup.brightmindsacademy@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #1b28d6, #9b95ee); margin-top: 50px;" direction="left" onmouseout="this.start()" scrollamount="25"><div class="marqu">“Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858 Vanigothra Complex , B.D Road, Chitradurga-577501 . Contact No: 08194469417, 775876858”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+			
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Tamanna Kouser All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png"> Bright Minds Academy , Chitradurga-577501</p><br>
+				<p><img src="images/icon/phone.png"> +91-1234567890<br><img src="images/icon/mail.png">&nbsp; sup.brightmindsacademy@gmail.com</p>
+			</div>
+			
+		</div>
+	</footer>
+
+</body>
+</html>

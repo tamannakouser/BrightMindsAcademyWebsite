@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence</title>
+    <button onclick="window.location.href='ml.html';" style="background-color:rgb(121, 121, 241);color:white;border:none;padding:15px 20px;font-size:20px;cursor:pointer;position:absolute;right:10px;top:50%;transform:translateY(-50%);border-radius:8px;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='darkblue'" onmouseout="this.style.backgroundColor='blue'" onmousedown="this.style.backgroundColor='navy'" onmouseup="this.style.backgroundColor='darkblue'">Next</button>
+    <button onclick="window.location.href='data.html';" style="background-color:rgb(121, 121, 226);color:white;border:none;padding:15px 20px;font-size:20px;cursor:pointer;position:absolute;left:10px;top:50%;transform:translateY(-50%);border-radius:8px;transition:background-color 0.3s ease;" onmouseover="this.style.backgroundColor='darkblue'" onmouseout="this.style.backgroundColor='blue'" onmousedown="this.style.backgroundColor='navy'" onmouseup="this.style.backgroundColor='darkblue'">previous</button>
+    <div class="get">
+        
+        <a href="index.html" class="get-started">Back to Home</a>
+        <style> .get-started {
+            margin-left: 1150px;
+           
+            padding: 5px 20px;
+            border: 2px solid #2743df;
+            border-radius: 20px;
+            text-decoration: none;
+            
+            
+            transition: .5s;
+            background-color: #9298eb;
+            color: #fff;
+        }
+        .get-started:hover {
+            color: #2e2e2e;
+            background: #fff;</style>
+    </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e2e9f5, #ffffff);
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #020a52;
+            margin: 20px;
+            animation: float 3s infinite ease-in-out;
+            text-shadow:  -2px 2px 0px rgb(150, 148, 148);
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-card {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+  <center>  <h1>Artificial Intelligence</h1></center>
+    <div class="images-container">
+        <!-- Replace 'image1.jpg', 'image2.jpg', etc. with the names of your images -->
+        <div class="image-card">
+            <img src="images/icon/ai1.jpg" alt="AI Image 1">
+        </div>
+        <div class="image-card">
+            <img src="images/icon/ai2.jpg" alt="AI Image 2">
+        </div>
+        <div class="image-card">
+            <img src="images/icon/ai3.jpg" alt="AI Image 3">
+        </div>
+    </div>
+   
+    <title>Artificial Intelligence Course Syllabus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .button-container {
+            width: 45%;
+        }
+        .module {
+            background-color: #8ca2eb;
+            color: rgb(8, 8, 8);
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .module:hover {
+            background-color: #c8e5ec;
+        }
+        .content {
+            padding: 10px 20px;
+            display: none;
+            background-color: #f1f1f1;
+            margin-top: 10px;
+            border-left: 3px solid #007BFF;
+        }
+        .arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        .arrow.open {
+            transform: rotate(90deg);
+        }
+    </style>
+
+<h1>Artificial Intelligence Course Syllabus</h1>
+
+<div class="container">
+    <div class="button-container">
+        <button class="module" onclick="toggleContent('module1', this)">
+            Introduction to AI <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module1" class="content">
+            <p>What is AI?</p>
+            <p>Applications of AI</p>
+            <p>History and Evolution of AI</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module2', this)">
+            Machine Learning Basics <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module2" class="content">
+            <p>Supervised vs Unsupervised Learning</p>
+            <p>Classification Algorithms</p>
+            <p>Regression Analysis</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module3', this)">
+            Neural Networks <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module3" class="content">
+            <p>Introduction to Neural Networks</p>
+            <p>Training a Neural Network</p>
+            <p>Activation Functions</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module4', this)">
+            Deep Learning <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module4" class="content">
+            <p>Deep Neural Networks</p>
+            <p>Convolutional Neural Networks (CNN)</p>
+            <p>Recurrent Neural Networks (RNN)</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module5', this)">
+            Reinforcement Learning <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module5" class="content">
+            <p>Introduction to Reinforcement Learning</p>
+            <p>Markov Decision Processes</p>
+            <p>Q-Learning</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="module" onclick="toggleContent('module6', this)">
+            Natural Language Processing <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module6" class="content">
+            <p>Text Preprocessing Techniques</p>
+            <p>Sentiment Analysis</p>
+            <p>Text Classification</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module7', this)">
+            AI in Computer Vision <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module7" class="content">
+            <p>Image Classification</p>
+            <p>Object Detection</p>
+            <p>Face Recognition</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module8', this)">
+            AI in Robotics <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module8" class="content">
+            <p>AI for Autonomous Robots</p>
+            <p>Robot Perception</p>
+            <p>Robot Control Systems</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module9', this)">
+            Ethical Implications of AI <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module9" class="content">
+            <p>AI and Bias</p>
+            <p>Ethical Challenges</p>
+            <p>AI for Good</p>
+        </div>
+
+        <button class="module" onclick="toggleContent('module10', this)">
+            AI Project <span class="arrow">&#9654;</span>
+        </button>
+        <div id="module10" class="content">
+            <p>Project Design</p>
+            <p>Data Collection</p>
+            <p>Model Implementation and Evaluation</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleContent(moduleId, buttonElement) {
+        var content = document.getElementById(moduleId);
+        var arrow = buttonElement.querySelector('.arrow');
+        
+        // Toggle the visibility of content
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            arrow.classList.add('open');
+        } else {
+            content.style.display = "none";
+            arrow.classList.remove('open');
+        }
+
+        // Close all other modules when one is opened
+        var allContent = document.querySelectorAll('.content');
+        var allArrows = document.querySelectorAll('.arrow');
+
+        allContent.forEach(function(item) {
+            if (item.id !== moduleId) {
+                item.style.display = "none";
+            }
+        });
+
+        allArrows.forEach(function(item) {
+            if (item.closest('button').querySelector('.content').id !== moduleId) {
+                item.classList.remove('open');
+            }
+        });
+    }
+</script>
+
+<footer>
+&copy; 2024 Cloud Computing Inc. created by Tamanna Kouser. All Rights Reserved.
+</footer>
+</body>
+ </html>
